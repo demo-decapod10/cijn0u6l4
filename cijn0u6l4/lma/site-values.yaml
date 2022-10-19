@@ -73,7 +73,7 @@ charts:
     adminPassword: password
     persistence.storageClassName: $(storageClassName)
     sidecar.dashboards.searchNamespace: ALL
-    service.type: ClusterIP
+    service.type: LoadBalancer
     grafana.ini.server:
       domain: dashboard-$(realms).$(serviceDomain)
       root_url: https://dashboard-$(realms).$(serviceDomain)/grafana
